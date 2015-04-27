@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hangman</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_game">GameActivity</string>
+
+    <string name="insert_letter_text">Insert letter</string>
+    <string name="check_letter_text">Check letter</string>
+</resources>

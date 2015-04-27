@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_color">#ffd73030</color>
+    <color name="main_backgorund_color_start">#ffffff</color>
+    <color name="main_backgorund_color_end">#ffffd3c5</color>
+    <color name="game_backgorund_color_start">#ffffff</color>
+    <color name="game_backgorund_color_end">#B6D877</color>
+
+</resources>
