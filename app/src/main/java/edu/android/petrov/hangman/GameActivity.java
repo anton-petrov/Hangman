@@ -25,6 +25,7 @@ public class GameActivity extends ActionBarActivity {
 
     private static final String TAG_GAME = "GAME";
     public static final String POINTS_ID = "POINTS_ID";
+    public static final String HANGMAN_SCORES = "HANGMAN_TOP_SCORES";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -181,7 +182,6 @@ public class GameActivity extends ActionBarActivity {
         TextView textView = (TextView) layoutLetter.getChildAt(position);
         textView.setText(Character.toString(letterGuessed));
     }
-
 
 //    @Override
 //    protected void onResume() {

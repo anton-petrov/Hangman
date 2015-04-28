@@ -4,15 +4,15 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_game">Hangman game</string>
-
     <string name="insert_letter_text">Insert letter</string>
     <string name="check_letter_text">Check letter</string>
     <string name="title_activity_game_over">Game over!</string>
     <string name="save_score">SAVE SCORE</string>
     <string name="insert_your_name">Type your name</string>
-
     <string name="point">points</string>
     <string name="points">points</string>
+    <string name="please_intro_letter">Please, introduce letter</string>
+    <string name="title_activity_scores">Top scores</string>
     <string name="words">AAHS AALS ABAC ABAS ABBA ABBE ABBS ABED ABET ABID ABLE ABLY ABOS
 ABRI ABUT ABYE ABYS ACAI ACCA ACED ACER ACES ACHE ACHY ACID ACME
 ACNE ACRE ACTA ACTS ACYL ADAW ADDS ADDY ADIT ADOS ADRY ADZE AEON
@@ -434,5 +434,4 @@ ZIGS ZILA ZILL ZIMB ZINC ZINE ZING ZINS ZIPS ZITE ZITI ZITS ZIZZ
 ZOBO ZOBU ZOEA ZOIC ZOLS ZONA ZONE ZONK ZOOM ZOON ZOOS ZOOT ZORI
 ZOUK ZULU ZUPA ZURF ZYGA ZYME ZZZS
 </string>
-    <string name="please_intro_letter">Please, introduce letter</string>
 </resources>

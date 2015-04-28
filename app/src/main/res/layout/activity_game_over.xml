@@ -46,13 +46,13 @@
             android:layout_height="wrap_content"
             android:text="@string/save_score"
             android:id="@+id/button4"
-            android:onClick="saveScores" />
+            android:onClick="saveScore" />
 
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="@string/insert_your_name"
-            android:id="@+id/editTextLetter"
+            android:id="@+id/editTextName"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp" />
 
