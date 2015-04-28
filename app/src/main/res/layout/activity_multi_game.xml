@@ -27,12 +27,12 @@
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/hangman_game_over"
+        android:src="@drawable/hangman_start"
         android:layout_marginTop="10dp" />
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="false"
         android:layout_centerHorizontal="true"
@@ -40,23 +40,27 @@
         android:layout_marginBottom="10dp"
         android:id="@+id/layoutAddLetter">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/insert_letter_text"
+            android:id="@+id/textView2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextLetter"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:maxLength="1" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/save_score"
+            android:text="@string/check_letter_text"
             android:id="@+id/button4"
-            android:onClick="saveScore" />
-
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/insert_your_name"
-            android:id="@+id/editTextName"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:maxLength="20" />
-
+            android:onClick="introduceLetter" />
     </LinearLayout>
 
     <LinearLayout
@@ -67,24 +71,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         android:id="@+id/layoutLetters">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text=""
-            android:id="@+id/textViewPoints"
-            android:layout_marginRight="5dp"
-            android:textSize="40dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="points"
-            android:id="@+id/textViewPts"
-            android:layout_marginRight="5dp"
-            android:textSize="40dp" />
 
     </LinearLayout>
 

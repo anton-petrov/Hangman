@@ -434,4 +434,7 @@ ZIGS ZILA ZILL ZIMB ZINC ZINE ZING ZINS ZIPS ZITE ZITI ZITS ZIZZ
 ZOBO ZOBU ZOEA ZOIC ZOLS ZONA ZONE ZONK ZOOM ZOON ZOOS ZOOT ZORI
 ZOUK ZULU ZUPA ZURF ZYGA ZYME ZZZS
 </string>
+    <string name="title_activity_multiplayer">MultiplayerActivity</string>
+    <string name="introduce_word">Introduce word</string>
+    <string name="play">Play</string>
 </resources>

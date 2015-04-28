@@ -14,4 +14,7 @@
     <string name="please_intro_letter">Пожалуйста, напечатайте букву!</string>
     <string name="hello_world">Привет, Мир!</string>
     <string name="title_activity_scores">Рекорды</string>
+    <string name="introduce_word">Придумайте слово</string>
+    <string name="play">Играть</string>
+    <string name="title_activity_multiplayer">Многопользовательская игра</string>
 </resources>

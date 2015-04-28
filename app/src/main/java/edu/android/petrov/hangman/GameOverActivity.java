@@ -9,6 +9,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 
 public class GameOverActivity extends ActionBarActivity {
 
@@ -35,14 +39,15 @@ public class GameOverActivity extends ActionBarActivity {
 
         SharedPreferences preferences = getSharedPreferences(GameActivity.HANGMAN_SCORES,
                 Context.MODE_PRIVATE);
-
         EditText editText = (EditText) findViewById(R.id.editTextName);
         String name = editText.getText().toString();
         SharedPreferences.Editor editor = preferences.edit();
 
         String previousScores = preferences.getString(ScoresActivity.SCORES, "");
 
-        editor.putString(ScoresActivity.SCORES, name + " " + userPoints + "\n\n" + previousScores);
+        String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
+        editor.putString(ScoresActivity.SCORES,
+                String.format("%-20s\t%3d\t%20s\n\n%s", name, userPoints, currentDateTimeString, previousScores));
 
         editor.commit();
 

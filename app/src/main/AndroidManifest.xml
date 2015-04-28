@@ -21,11 +21,17 @@
             android:label="@string/title_activity_game" >
         </activity>
         <activity
+            android:name=".GameMultiActivity"
+            android:label="@string/title_activity_game"></activity>
+        <activity
             android:name=".GameOverActivity"
             android:label="@string/title_activity_game_over" />
         <activity
             android:name=".ScoresActivity"
-            android:label="@string/title_activity_scores"></activity>
+            android:label="@string/title_activity_scores" />
+        <activity
+            android:name=".MultiplayerActivity"
+            android:label="@string/title_activity_multiplayer"></activity>
     </application>
 
 </manifest>

@@ -2,7 +2,6 @@ package edu.android.petrov.hangman;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,7 +14,7 @@ import android.widget.Toast;
 import java.util.Random;
 
 
-public class GameActivity extends Activity {
+public class GameMultiActivity extends Activity {
 
     String hiddenWord = "word";
     int failsCount = 0;
@@ -24,14 +23,14 @@ public class GameActivity extends Activity {
 
     final Random random = new Random();
 
-    public static final String TAG_GAME = "GAME";
+    private static final String TAG_GAME = "GAME";
     public static final String POINTS_ID = "POINTS_ID";
     public static final String HANGMAN_SCORES = "HANGMAN_TOP_SCORES";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game);
+        setContentView(R.layout.activity_multi_game);
 
         startGame();
     }
@@ -41,7 +40,9 @@ public class GameActivity extends Activity {
      */
     void startGame() {
         clearScreen();
-        setRandomWord();
+        hiddenWord = getIntent().getStringExtra(MultiplayerActivity.WORD_ID);
+        Log.d(GameActivity.TAG_GAME, "hiddenWord = " + hiddenWord);
+        createTextViews(hiddenWord);
     }
 
     @Override
@@ -50,14 +51,12 @@ public class GameActivity extends Activity {
         startGame();
     }
 
-    public void setRandomWord() {
-        String words = getResources().getString(R.string.words);
-
-        String[] arrayWords = words.split(" ");
-
-        Log.d(TAG_GAME, "words count = " + arrayWords.length);
-
-        hiddenWord = arrayWords[random.nextInt(arrayWords.length - 1)];
+    public void createTextViews(String word) {
+        LinearLayout layoutLetters = (LinearLayout) findViewById(R.id.layoutLetters);
+        for (int i = 0; i < word.length(); i++) {
+            TextView newTextView = (TextView) getLayoutInflater().inflate(R.layout.textview, null);
+            layoutLetters.addView(newTextView);
+        }
     }
 
     /**
@@ -111,8 +110,7 @@ public class GameActivity extends Activity {
 
         // угадали слово!
         if (guessedLettersCount == hiddenWord.length()) {
-            userPoints++;
-            startGame();
+            finish();
         }
     }
 
