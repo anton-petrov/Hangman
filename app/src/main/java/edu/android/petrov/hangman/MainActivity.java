@@ -1,10 +1,8 @@
 package edu.android.petrov.hangman;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 
 
@@ -31,4 +29,7 @@ public class MainActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
+    public void exitGame(View view) {
+        finish();
+    }
 }

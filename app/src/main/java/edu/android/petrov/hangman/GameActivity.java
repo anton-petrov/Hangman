@@ -2,7 +2,6 @@ package edu.android.petrov.hangman;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -51,12 +50,8 @@ public class GameActivity extends Activity {
     }
 
     public void setRandomWord() {
-        String words = getResources().getString(R.string.words);
-
-        String[] arrayWords = words.split(" ");
-
+        String[] arrayWords = getResources().getString(R.string.words).split(" ");
         Log.d(TAG_GAME, "words count = " + arrayWords.length);
-
         hiddenWord = arrayWords[random.nextInt(arrayWords.length - 1)];
     }
 

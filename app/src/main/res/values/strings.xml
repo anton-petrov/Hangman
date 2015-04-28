@@ -437,4 +437,8 @@ ZOUK ZULU ZUPA ZURF ZYGA ZYME ZZZS
     <string name="title_activity_multiplayer">MultiplayerActivity</string>
     <string name="introduce_word">Introduce word</string>
     <string name="play">Play</string>
+    <string name="start_game">Start Game</string>
+    <string name="multiplayer_game">Multiplayer</string>
+    <string name="scores">Scores</string>
+    <string name="exit">Exit</string>
 </resources>

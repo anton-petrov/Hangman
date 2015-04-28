@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Виселица</string>
-    <string name="check_letter_text">Проверить букву</string>
+    <string name="check_letter_text">ОК</string>
     <string name="insert_letter_text">Впишите букву</string>
     <string name="insert_your_name">Напишите свое имя</string>
     <string name="point">очк.</string>
@@ -17,4 +17,8 @@
     <string name="introduce_word">Придумайте слово</string>
     <string name="play">Играть</string>
     <string name="title_activity_multiplayer">Многопользовательская игра</string>
+    <string name="start_game">Начать игру</string>
+    <string name="scores">Рекорды</string>
+    <string name="multiplayer_game">Угадайка</string>
+    <string name="exit">Выход</string>
 </resources>
