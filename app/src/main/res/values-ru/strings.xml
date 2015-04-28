@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Виселица</string>
+    <string name="check_letter_text">Проверить букву</string>
+    <string name="insert_letter_text">Впишите букву</string>
+    <string name="insert_your_name">Напишите свое имя</string>
+    <string name="point">очк.</string>
+    <string name="points">очк.</string>
+    <string name="save_score">ОК</string>
+    <string name="title_activity_game">Игра виселица</string>
+    <string name="title_activity_game_over">Игра закончена!</string>
+    <string name="words">маша миша мама папа баба мозг пуки жуки вася маня жора кака дюдя</string>
+    <string name="action_settings"></string>
+    <string name="please_intro_letter">Пожалуйста, напечатайте букву!</string>
+    <string name="hello_world">Привет, Мир!</string>
+</resources>
